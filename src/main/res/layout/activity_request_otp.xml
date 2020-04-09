@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/mail_tag"
+        style="@style/tag"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="140dp"
+        android:text="E-mail or phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@color/blue"
+        android:paddingStart="1dp"
+        android:paddingEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mail"
+        app:layout_constraintStart_toStartOf="@+id/mail"
+        app:layout_constraintTop_toTopOf="@+id/mail"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <EditText
+        android:id="@+id/mail"
+        style="@style/edit"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail_tag" />
+
+
+    <Button
+        android:id="@+id/send_otp"
+        style="@style/button"
+        android:background="@drawable/button_sign_up"
+        android:text="Send OTP"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail" />
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send_otp" />
+
+    <TextView
+        android:id="@+id/editText"
+        style="@style/view"
+        android:layout_marginBottom="12dp"
+        android:background="@color/white"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="   Login with   "
+        app:layout_constraintBottom_toTopOf="@+id/google"
+        app:layout_constraintEnd_toEndOf="@id/view2"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:src="@drawable/google_plus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/facebook"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="28dp"
+        android:src="@drawable/facebook"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+
+        app:layout_constraintStart_toEndOf="@+id/google"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
