@@ -1,4 +1,4 @@
-package com.example.kola_task1;
+package com.example.simpleApp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private void Next(){
-        Intent welcome= new Intent(MainActivity.this, Action.class);
+        Intent welcome= new Intent(MainActivity.this, ActionActivity.class);
                 startActivity(welcome);
     }
 }

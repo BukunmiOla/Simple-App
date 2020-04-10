@@ -1,4 +1,4 @@
-package com.example.kola_task1;
+package com.example.simpleApp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,13 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class Sign_Up extends AppCompatActivity {
-
+public class ResetPasswordActivity extends AppCompatActivity {
     TextView login;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign__up);
+        setContentView(R.layout.activity_reset_password);
 
         login=findViewById(R.id.login);
 
@@ -24,10 +23,10 @@ public class Sign_Up extends AppCompatActivity {
             }
         });
 
-    }
+       }
     private void Login(){
-        Intent login=new Intent(Sign_Up.this, Login.class);
+        Intent login=new Intent(ResetPasswordActivity.this, LoginActivity.class);
         startActivity(login);
-
     }
+
 }

@@ -1,4 +1,4 @@
-package com.example.kola_task1;
+package com.example.simpleApp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Action extends AppCompatActivity {
+public class ActionActivity extends AppCompatActivity {
 
     Button login, sign_up;
 
@@ -34,11 +34,11 @@ public class Action extends AppCompatActivity {
         });
     }
     private void Login(){
-        Intent login=new Intent(Action.this, Login.class);
+        Intent login=new Intent(ActionActivity.this, LoginActivity.class);
         startActivity(login);
     }
     private void SignUp(){
-        Intent signup = new Intent(Action.this, Sign_Up.class);
+        Intent signup = new Intent(ActionActivity.this, SignUpActivity.class);
         startActivity(signup);
     }
 }

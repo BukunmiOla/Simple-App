@@ -1,4 +1,4 @@
-package com.example.kola_task1;
+package com.example.simpleApp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class Login extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
     TextView forgot_password, sign_up;
 
     @Override
@@ -34,12 +34,12 @@ public class Login extends AppCompatActivity {
         });
     }
     private void fgt_pw(){
-        Intent f_password = new Intent(Login.this, Request_otp.class);
+        Intent f_password = new Intent(LoginActivity.this, RequestOtpActivity.class);
         startActivity(f_password);
     }
 
     private void SignUp(){
-        Intent signup = new Intent(Login.this, Sign_Up.class);
+        Intent signup = new Intent(LoginActivity.this, SignUpActivity.class);
         startActivity(signup);
     }
 }
